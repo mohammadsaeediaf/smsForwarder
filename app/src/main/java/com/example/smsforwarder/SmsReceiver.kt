@@ -36,7 +36,8 @@ class SmsReceiver : BroadcastReceiver() {
 
         if (!matchesSender(context, sender)) return
 
-        val text = "از: $sender\n$body"
+        val text = body.toString()
+        if (text.isBlank()) return
         sendSms(context, destination, text)
     }
 
