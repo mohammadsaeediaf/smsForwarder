@@ -50,7 +50,8 @@ class MainActivity : Activity() {
     private fun requestSmsPermissions() {
         val needed = arrayOf(
             Manifest.permission.RECEIVE_SMS,
-            Manifest.permission.SEND_SMS
+            Manifest.permission.SEND_SMS,
+            Manifest.permission.READ_CONTACTS
         ).filter { checkSelfPermission(it) != PackageManager.PERMISSION_GRANTED }
 
         if (needed.isNotEmpty()) {

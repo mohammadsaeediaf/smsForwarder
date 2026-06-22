@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="4dp"
             android:textSize="12sp"
-            android:text="نکته: دقیقاً همان نام/شماره‌ای را که روی گوشی‌تان به‌عنوان فرستنده‌ی بانک نشان داده می‌شود وارد کنید." />
+            android:text="نکته: می‌توانید نام مخاطب ذخیره‌شده (مثل mom)، شماره، یا نام بانک را وارد کنید؛ اپ هر سه را تشخیص می‌دهد." />
 
         <Switch
             android:id="@+id/enabledSwitch"
